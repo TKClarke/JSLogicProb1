@@ -1,0 +1,53 @@
+Problem:  You have been asked to write a computer program for a entertainment center. They have sell their tickets at two separate  prices.  Tickets are $10 a piece except for their "early bird" movies which cost only $5 a ticket.   At the entertainment center they offer all patrons dinner along with the movie.  The cost of dinner is $8 during the week and $12 during the weekend.   All customers must pay for both dinner and the movie.   At the end of the order a receipt is printed showing:  Number of Tickets, price per ticket, price per dinner, cost of dinner and meal, total amount owed.
+
+test data:  5 tickets, early bird, weekday
+Price per ticket: $5
+Price per dinner:  $8
+Price per dinner and meal:  $13
+Total Amount Owed:  $65
+
+10 tickets, evening ticket, weekend
+Price per ticket: $10
+Price per dinner:  $12
+Price per dinner and meal:  $22
+Total Amount Owed:  $220
+
+Assumptions:
+dinner and movie for each
+only two movie prices
+only two dinner prices
+no additional fees
+
+regular Ticket = 10
+earlybird Ticket = 5
+weekday Dinner = 8
+weekend Dinner = 12
+
+Input:
+number of Tickets
+ticket Type
+dinner Type
+
+Calculations:
+
+if ticket Type = "regular" then
+     ticket Rate = regular Ticket
+else
+     ticket Rate = earlybird Ticket
+if dinner Type = "weekday" then
+     dinner Rate = weekday Dinner
+else
+     dinner Rate = weekend Dinner
+
+total Ticket and Dinner = ticket Rate + dinner Rate
+total Amount = total ticket Dinner * number Tickets
+
+Output:
+number of Tickets
+ticket Rate
+dinner Rate
+total Ticket and Dinner
+total Amount
+
+
+

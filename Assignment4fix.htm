@@ -1,0 +1,37 @@
+<script type="text/javascript">
+<!--
+var regularTicket = 10;
+var earlybirdTicket = 5;
+var weekdayDinner = 8;
+var weekendDinner = 12;
+//input
+numberTickets = prompt ("How Many Tickets?", "");
+ticketType = prompt ("What is the type of Ticket regular or early?", "");
+dinnerType = prompt ("What Type of Dinner weekday or weekend?", ""); 
+//calculations
+if (ticketType == "regular")
+{
+ticketRate = regularTicket;
+}
+else
+{
+ticketRate = earlybirdTicket;
+}
+if (dinnerType == "weekday")
+{
+dinnerRate = weekdayDinner;
+}
+else
+{
+dinnerRate = weekendDinner;
+}
+totalTicketDinner = ticketRate + dinnerRate
+totalAmount = totalTicketDinner * numberTickets
+//output
+document.write ("Number of Tickets?; " + numberTickets); 
+document.write ("<br>The Ticket Rate?; $" + ticketRate);
+document.write ("<br>The Dinner Rate?; $" + dinnerRate);
+document.write ("<br>The total of Ticket and Dinner?; $" + totalTicketDinner); 
+document.write ("<br>The total Amount?; $" + totalAmount);
+// -->
+</script>
